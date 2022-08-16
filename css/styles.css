@@ -20,7 +20,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.17;
-    letter-spacing: 3%;
+    letter-spacing: 0.03;
     color: var(--main-light-color);
 }
 
@@ -51,7 +51,8 @@ body {
 .logo,
 .link-nav,
 .link-contact,
-.link-footer {
+.link-footer,
+.link-images {
     text-decoration:none;
 }
 
@@ -73,7 +74,7 @@ body {
 .header-contacts {
     font-size: 14px;
     font-weight: 500;
-    letter-spacing: 2%;
+    letter-spacing: 0.02;
 }
 
 .link-nav {
@@ -106,7 +107,7 @@ body {
     font-style: inherit;
     font-weight: 900;
     line-height: 1.36;
-    letter-spacing: 6%;
+    letter-spacing: 0.06;
     text-transform: uppercase;
     color: var(--white-color);
 }
@@ -126,19 +127,31 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
-    letter-spacing: 6%;
+    letter-spacing: 0.06;
 }
 
 
         /* Section with our difference list and witout title h2 */
 
-.invisible-title {
+/* .invisible-title {
     visibility: hidden;
+} */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .differences-list {
     font-family: inherit;
-    font-weight: inherit;
     line-height: inherit;
     font-size: 14px;
 }
@@ -195,7 +208,6 @@ body {
     font-family: inherit;
     font-style: normal;
     font-size: 14px;
-    font-weight: inherit;
     letter-spacing: inherit;
     line-height: 1.71;
 }
@@ -221,7 +233,7 @@ body {
 /* Page 2 (portfolio.html) Styles for main */
 
 .list-buttons {
-    background-color: var(--grey-button-color);
+    /* background-color: var(--grey-button-color); */
     color: var(--main-dark-color);
 
     font-size: 16px;
@@ -240,14 +252,13 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
-    letter-spacing: 6%;
+    letter-spacing: 0.06;
 
     color: var(--main-dark-color);
 }
 
 .image-text {
     font-size: 16px;
-    font-weight: inherit;
     line-height: 1.88;
     letter-spacing: inherit;
 
